@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d0ba452-9db4-485e-ba16-fbc0c8cecf2f" name="Default" comment="">
+    <list default="true" id="7d0ba452-9db4-485e-ba16-fbc0c8cecf2f" name="Default" comment="Assignment 4/4/2016">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ArraysAssign/out/production/ArraysAssign/Averages.class" afterPath="$PROJECT_DIR$/../ArraysAssign/out/production/ArraysAssign/Averages.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ArraysAssign/out/production/ArraysAssign/Main.class" afterPath="$PROJECT_DIR$/../ArraysAssign/out/production/ArraysAssign/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ArraysAssign/out/production/ArraysAssign/Naming.class" afterPath="$PROJECT_DIR$/../ArraysAssign/out/production/ArraysAssign/Naming.class" />
@@ -34,7 +34,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Brewery/src/BrewLists.java" afterPath="$PROJECT_DIR$/../Brewery/src/BrewLists.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Brewery/src/BrewMap.java" afterPath="$PROJECT_DIR$/../Brewery/src/BrewMap.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Brewery/src/Main.java" afterPath="$PROJECT_DIR$/../Brewery/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ToDo/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../ToDo/.idea/workspace.xml" />
     </list>
     <ignored path="InventoryTracker.iws" />
@@ -643,7 +643,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1459793199990</updated>
-      <workItem from="1459793210679" duration="8524000" />
+      <workItem from="1459793210679" duration="8640000" />
     </task>
     <task id="LOCAL-00001" summary="Assignment 4/4/2016">
       <created>1459802101604</created>
@@ -656,7 +656,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8524000" />
+    <option name="totallyTimeSpent" value="8640000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
