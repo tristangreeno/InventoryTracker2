@@ -2,15 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d0ba452-9db4-485e-ba16-fbc0c8cecf2f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ArrayStorage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CheckStorage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/HashStorage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PrintStorage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwitchControl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/User.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ArraysAssign/out/production/ArraysAssign/Averages.class" afterPath="$PROJECT_DIR$/../ArraysAssign/out/production/ArraysAssign/Averages.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ArraysAssign/out/production/ArraysAssign/Main.class" afterPath="$PROJECT_DIR$/../ArraysAssign/out/production/ArraysAssign/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ArraysAssign/out/production/ArraysAssign/Naming.class" afterPath="$PROJECT_DIR$/../ArraysAssign/out/production/ArraysAssign/Naming.class" />
@@ -43,6 +34,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Brewery/src/BrewLists.java" afterPath="$PROJECT_DIR$/../Brewery/src/BrewLists.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Brewery/src/BrewMap.java" afterPath="$PROJECT_DIR$/../Brewery/src/BrewMap.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Brewery/src/Main.java" afterPath="$PROJECT_DIR$/../Brewery/src/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ToDo/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../ToDo/.idea/workspace.xml" />
     </list>
     <ignored path="InventoryTracker.iws" />
@@ -80,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/src/SwitchControl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="435">
-              <caret line="44" column="34" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
+              <caret line="44" column="33" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -143,7 +135,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -651,16 +643,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1459793199990</updated>
-      <workItem from="1459793210679" duration="8449000" />
+      <workItem from="1459793210679" duration="8524000" />
     </task>
+    <task id="LOCAL-00001" summary="Assignment 4/4/2016">
+      <created>1459802101604</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1459802101604</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8449000" />
+    <option name="totallyTimeSpent" value="8524000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -674,7 +674,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -691,6 +691,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Assignment 4/4/2016" />
+    <option name="LAST_COMMIT_MESSAGE" value="Assignment 4/4/2016" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -767,7 +771,7 @@
     <entry file="file://$PROJECT_DIR$/src/SwitchControl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
-          <caret line="44" column="34" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
+          <caret line="44" column="33" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
           <folding />
         </state>
       </provider>
