@@ -42,7 +42,7 @@ public class SwitchControl {
                     break;
                 case "5":
                     System.out.println("You have logged out.");
-                    User.logIn();I
+                    User.logIn();
                 default:
                     System.out.println("Please enter a valid number (1-5).");
             }
