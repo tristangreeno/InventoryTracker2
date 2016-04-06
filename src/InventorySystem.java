@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
@@ -28,6 +29,7 @@ public class InventorySystem {
         User.logIn();
         while (true) {
 
+            boolean isCategoryInvalid = true;
             PrintStorage.printStorage();
             System.out.println("Enter 1 to create a new item, and enter its name.");
             System.out.println("Enter 2 to remove an item by its number.");
@@ -40,59 +42,81 @@ public class InventorySystem {
                     String nameOfItem = itemName.nextLine();
                     InventoryArray.addToListOfItemNames(nameOfItem);
 
-                    System.out.println("Enter the category of item.");
-                    System.out.println("Categories: Bow, Spear, Sword, Potion, Staff");
-
-                    switch (category.nextLine()){
-                        case "Sword":
-                            Sword sword = new Sword();
-                            categoryOfItem.put(nameOfItem, sword.createItem(nameOfItem, 13, 3));
-                            InventoryArray.addToListOfDamageValues(nameOfItem, 13);
-                            InventoryArray.addToListOfSpaceValues(nameOfItem, 3);
-                            break;
-                        case "Spear":
-                            Spear spear = new Spear();
-                            categoryOfItem.put(nameOfItem, spear.createItem(nameOfItem, 22, 5));
-                            InventoryArray.addToListOfDamageValues(nameOfItem, 22);
-                            InventoryArray.addToListOfSpaceValues(nameOfItem, 5);
-                            break;
-                        case "Potion":
-                            Potion potion = new Potion();
-                            categoryOfItem.put(nameOfItem, potion.createItem(nameOfItem, 40, 2));
-                            InventoryArray.addToListOfHealingValues(nameOfItem, 40);
-                            InventoryArray.addToListOfSpaceValues(nameOfItem, 2);
-                            break;
-                        case "Bow":
-                            Bow bow = new Bow();
-                            categoryOfItem.put(nameOfItem, bow.createItem(nameOfItem, 33, 3));
-                            InventoryArray.addToListOfDamageValues(nameOfItem, 33);
-                            InventoryArray.addToListOfSpaceValues(nameOfItem, 3);
-                            break;
-                        case "Staff":
-                            Staff staff = new Staff();
-                            categoryOfItem.put(nameOfItem, staff.createItem(nameOfItem, 26, 4));
-                            InventoryArray.addToListOfDamageValues(nameOfItem, 26);
-                            InventoryArray.addToListOfSpaceValues(nameOfItem, 4);
-                            break;
-                        default:
-                            System.out.println("Please enter a valid category.");
-                    }
+                    do {
+                        System.out.println("Enter item's category.");
+                        System.out.println("Categories: Bow, Spear, Sword, Potion, Staff");
+                        switch (category.nextLine()) {
+                            case "Sword":
+                                Sword sword = new Sword();
+                                categoryOfItem.put(nameOfItem, sword.createItem(nameOfItem, 13, 3));
+                                InventoryArray.addToListOfDamageValues(nameOfItem, 13);
+                                InventoryArray.addToListOfSpaceValues(nameOfItem, 3);
+                                isCategoryInvalid = false;
+                                break;
+                            case "Spear":
+                                Spear spear = new Spear();
+                                categoryOfItem.put(nameOfItem, spear.createItem(nameOfItem, 22, 5));
+                                InventoryArray.addToListOfDamageValues(nameOfItem, 22);
+                                InventoryArray.addToListOfSpaceValues(nameOfItem, 5);
+                                isCategoryInvalid = false;
+                                break;
+                            case "Potion":
+                                Potion potion = new Potion();
+                                categoryOfItem.put(nameOfItem, potion.createItem(nameOfItem, 40, 2));
+                                InventoryArray.addToListOfHealingValues(nameOfItem, 40);
+                                InventoryArray.addToListOfSpaceValues(nameOfItem, 2);
+                                isCategoryInvalid = false;
+                                break;
+                            case "Bow":
+                                Bow bow = new Bow();
+                                categoryOfItem.put(nameOfItem, bow.createItem(nameOfItem, 33, 3));
+                                InventoryArray.addToListOfDamageValues(nameOfItem, 33);
+                                InventoryArray.addToListOfSpaceValues(nameOfItem, 3);
+                                isCategoryInvalid = false;
+                                break;
+                            case "Staff":
+                                Staff staff = new Staff();
+                                categoryOfItem.put(nameOfItem, staff.createItem(nameOfItem, 26, 4));
+                                InventoryArray.addToListOfDamageValues(nameOfItem, 26);
+                                InventoryArray.addToListOfSpaceValues(nameOfItem, 4);
+                                isCategoryInvalid = false;
+                                break;
+                            default:
+                                System.out.println("Please enter a valid category.");
+                        }
+                    }while (isCategoryInvalid);
 
                     break;
 
                 case "2":
                     System.out.println("Enter the number of item.");
-                    InventoryArray.removeFromList(itemNumber.nextInt());
+                    try {
+                        InventoryArray.removeFromList(itemNumber.nextInt());
+                    }catch(IndexOutOfBoundsException e){
+                        System.out.println("Item number not found in list.\n");
+                    }catch (InputMismatchException f){
+                        System.out.println("Invalid input. Please enter an integer.\n");
+                    }
                     break;
 
                 case "3":
                     System.out.println("Enter the name of item, then its number.");
-                    InventoryHashmap.setQuantityInventory(itemUpdateName.nextLine(), numberOfItems.nextInt());
+                    try {
+                        InventoryHashmap.setQuantityInventory(itemUpdateName.nextLine(), numberOfItems.nextInt());
+                    }catch(InputMismatchException e){
+                        System.out.println("Invalid input. Please enter a name, then an integer number.");
+                    }catch(IndexOutOfBoundsException e){
+                        System.out.println("Item number not found in inventory.");
+                    }
                     break;
 
                 case "4":
                     System.out.println("Enter the name of the item, and then the name you wish to give it.");
-                    InventoryArray.renameItem(oldName.nextLine(), newName.nextLine());
+                    try {
+                        InventoryArray.renameItem(oldName.nextLine(), newName.nextLine());
+                    }catch (ArrayIndexOutOfBoundsException e){
+                        System.out.println("Item not found in inventory.");
+                    }
                     break;
 
                 case "5":
@@ -100,7 +124,7 @@ public class InventorySystem {
                     User.logIn();
 
                 default:
-                    System.out.println("Please enter a valid number (1-5).");
+                    System.out.println("Please enter a valid number (1-5).\n");
             }
         }
     }
